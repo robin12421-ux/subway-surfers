@@ -1,0 +1,9 @@
+{
+  "name": "track-05-3d-subway-scroll",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev": "vite --host 0.0.0.0", "build": "vite build", "preview": "vite preview --host 0.0.0.0"},
+  "dependencies": {"gsap": "^3.13.0", "three": "^0.178.0"},
+  "devDependencies": {"vite": "^6.3.5"}
+}

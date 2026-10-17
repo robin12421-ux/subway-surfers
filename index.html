@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b12" />
+  <meta name="description" content="Track 05 — an immersive 3D scroll journey through the world of YouTube." />
+  <title>TRACK 05 — The Video Line</title>
+</head>
+<body>
+  <div id="experience" aria-label="Interactive 3D train experience">
+    <canvas id="scene" aria-label="A 3D subway train in a neon-lit tunnel"></canvas>
+    <div class="scene-vignette"></div>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Track 05 home"><span class="brand-mark">T<span>05</span></span><span class="brand-name">TRACK <b>05</b></span></a>
+    <div class="top-note"><span class="live-dot"></span> THE VIDEO LINE <span class="top-divider">/</span> AN INTERACTIVE JOURNEY</div>
+    <a class="soundless-pill" href="#journey">SCROLL TO RIDE <span>↘</span></a>
+  </header>
+  <div class="progress-track"><div id="progress-fill"></div></div>
+  <main id="top">
+    <section class="hero scene-section" id="journey">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> NEXT STOP: YOUR CURIOSITY</p>
+        <h1>ALL ABOARD<br>THE <span>VIDEO</span><br>LINE<span class="period">.</span></h1>
+        <p class="hero-description">Five doors. Five perspectives. One platform that changed how the world watches, learns, and shares.</p>
+        <a class="start-link" href="#door-1"><span class="start-icon">↓</span><span>START THE JOURNEY</span><small>SCROLL TO EXPLORE</small></a>
+      </div>
+      <div class="hero-side"><span class="vertical-label">A DIGITAL CULTURE EXPLORATION</span><div class="hero-index">01 <i>—</i> 05</div></div>
+      <div class="hero-bottom"><span>TRACK 05 / DIGITAL CULTURE</span><span>SCROLL TO MOVE THE TRAIN <span class="scroll-arrows">↓↓</span></span></div>
+    </section>
+    <section class="journey-spacer" aria-label="Five stops along the journey">
+      <div class="door-readout"><span class="readout-label">CURRENT STOP</span><strong id="door-count">DOOR 01 <i>/</i> 05</strong><span id="door-name">INTRODUCTION</span></div>
+      <div class="stop-markers" aria-label="Journey stops"><span class="stop active">01</span><span class="stop">02</span><span class="stop">03</span><span class="stop">04</span><span class="stop">05</span></div>
+      <div class="scroll-hint">KEEP MOVING <span>↓</span></div>
+    </section>
+    <div id="content-panels" aria-live="polite"></div>
+    <section class="outro scene-section" id="end">
+      <div class="outro-orbit orbit-one"></div><div class="outro-orbit orbit-two"></div>
+      <div class="outro-content"><p class="eyebrow"><span class="eyebrow-line"></span> END OF THE LINE</p><h2>THE NEXT<br><span>CHAPTER</span><br>IS YOURS.</h2><p>Every journey starts with a point of view. Keep exploring, keep creating, and stay curious.</p><button id="replay" class="replay-button"><span>↻</span> RIDE AGAIN <small>RETURN TO THE FIRST STOP</small></button></div>
+      <div class="outro-footer"><span>TRACK 05 — THE VIDEO LINE</span><span>AN INDEPENDENT CREATIVE CONCEPT · NOT AFFILIATED WITH YOUTUBE OR SUBWAY SURFERS</span></div>
+    </section>
+  </main>
+  <div id="webgl-fallback" role="status" hidden>Your browser couldn't start WebGL. The journey is still available below—scroll to explore the five stops.</div>
+  <noscript><div class="noscript">Please enable JavaScript to experience the interactive train journey.</div></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
